@@ -1,7 +1,6 @@
 #include<stdio.h>
 int sp=0,maxval=100;
 float t[100],numero;
-char s[100];
 char gettop(void){
     int i=0;
     char c;
