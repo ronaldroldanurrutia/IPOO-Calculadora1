@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include "calc.h"
 int sp=0,maxval=100;
 float t[100];
 void push (float f){
