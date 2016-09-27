@@ -18,7 +18,7 @@ char gettop(void){
     if(c=='.'){
         scanf("%c",&c);
     }
-    for(;c!=' ' && c!='\t';){
+    for(;c>='0' && c<='9';){
         val=(val*10)+(c-'0');
         power*=10;
         scanf("%c",&c);
