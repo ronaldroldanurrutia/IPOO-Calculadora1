@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<calc.h>
 float numero;
 char gettop(void){
     int i=0;
