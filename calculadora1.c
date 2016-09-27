@@ -1,6 +1,5 @@
 #include<stdio.h>
-#include "push1.c"
-#include "gettop.c"
+#include "calc.h"
 main(){
     float p2;
     char a;
