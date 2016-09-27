@@ -23,9 +23,6 @@ char gettop(void){
         power*=10;
         scanf("%c",&c);
     }
-    if(c!=' ' && c!='\t'){
-        return 'h';
-    }
     numero=val/power;
     return '1';
 }
