@@ -29,7 +29,7 @@ main(){
                 push(numero);
                 break;
             case '\n':
-                printf("%f",pop());
+                printf("%f\n",pop());
                 break;
         }
     }
