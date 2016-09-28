@@ -1,5 +1,7 @@
 # define NUMBER '0'
 void push(double);
 double pop(void):
-char gettop(void);
+int gettop(void);
+int getch(void);
+void ungetch(int);
 
