@@ -1,30 +1,16 @@
-#include<stdio.h>
-#include<calc.h>
-float numero;
-char gettop(void){
-    int i=0;
-    char c;
-    scanf("%c",&c);
-    while(c==' ' || c=='\t'){
-        scanf("%c",&c);
-    }
-    if(c<'0' || c>'9'){
+#include<ctype.h>
+#include "getch.c"
+int getch(void);
+void ungetch(int);
+int gettop(char s[]){
+    int i,c;
+    while(s[0]=c=getchar() ==' ' || c=='\t');
+    s[1]='\0';
+    if(!isdigit(c) && c!='.'){
         return c;
     }
-    float power=1,val=0;
-    for(;c>='0' && c<='9';){
-        val=(val*10)+(c-'0');
-        scanf("%c",&c);
+    i=0;
+    if(isdigit(i)){
+        while(isdigit(s[++i]=c=getch()));
     }
-    if(c=='.'){
-        scanf("%c",&c);
-    }
-    for(;c>='0' && c<='9';){
-        val=(val*10)+(c-'0');
-        power*=10;
-        scanf("%c",&c);
-    }
-    numero=val/power;
-    return '1';
 }
-
