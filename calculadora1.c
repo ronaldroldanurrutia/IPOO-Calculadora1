@@ -1,8 +1,10 @@
 #include<stdio.h>
+#include<stdlib>
 #include "calc.h"
 main(){
+    int a;
     float p2;
-    char a;
+    char s[100];
     while((a=gettop())!=EOF){
         switch(a){
             case '+':
@@ -25,7 +27,7 @@ main(){
                 }
                 break;
             case 1:
-                push(numero);
+                push(atof(s));
                 break;
             case '\n':
                 printf("%f\n",pop());
